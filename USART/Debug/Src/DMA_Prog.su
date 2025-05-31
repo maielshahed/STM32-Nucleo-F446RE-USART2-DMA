@@ -1,0 +1,10 @@
+../Src/DMA_Prog.c:32:6:DMA_Init	24	static
+../Src/DMA_Prog.c:93:6:DMA_START	16	static
+../Src/DMA_Prog.c:122:6:DMA_TRANSFER	16	static
+../Src/DMA_Prog.c:161:6:DMA_CLEARFLAGS	24	static
+../Src/DMA_Prog.c:175:6:DMA_START_IT	16	static
+../Src/DMA_Prog.c:202:10:DMA_GETSTATUS	32	static
+../Src/DMA_Prog.c:219:6:Enable_DMA_IRQ	24	static
+../Src/DMA_Prog.c:245:31:DMA_GetStreamPtr	16	static
+../Src/DMA_Prog.c:257:6:DMA_EnableStream	24	static
+../Src/DMA_Prog.c:280:6:USART_DMA_WaitTxComplete	4	static

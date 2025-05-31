@@ -1,0 +1,35 @@
+/*
+ * USART_Prog.c
+ *
+ *  Created on: May 26, 2025
+ *      Author: Mai El Shahed
+ */
+
+
+#include <stdint.h>
+
+
+#include "Stm32F446xx.h"
+
+#include "USART_interface.h"
+
+
+
+void USART_ConfigMode(USART_RegDef_t *USARTx, USART_Mode mode)
+{
+    // RE و TE
+    USARTx->CR1 &= ~((1 << RE) | (1 << TE));
+
+    switch (mode)
+    {
+        case RX_ONLY:
+            USARTx->CR1 |= (1 << RE);
+            break;
+        case TX_ONLY:
+            USARTx->CR1 |= (1 << TE);
+            break;
+        case RX_TX:
+            USARTx->CR1 |= (1 << RE) | (1 << TE);
+            break;
+    }
+}

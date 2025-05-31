@@ -1,0 +1,7 @@
+10:25:56 **** Incremental Build of configuration Debug for project USART_DMA ****
+make -j4 all 
+arm-none-eabi-size  USART_DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3964	     40	   1568	   5572	   15c4	USART_DMA.elf
+Finished building: default.size.stdout
+ 

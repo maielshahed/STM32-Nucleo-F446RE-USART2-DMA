@@ -1,0 +1,9 @@
+../Src/USART_Prog.c:23:6:USART_ConfigMode	16	static
+../Src/USART_Prog.c:42:6:USART_DMA_StartTx	16	static
+../Src/USART_Prog.c:49:6:USART_DMA_StartRx	16	static
+../Src/USART_Prog.c:59:6:USART_Init	40	static
+../Src/USART_Prog.c:99:6:USART_SendChar	16	static
+../Src/USART_Prog.c:111:9:USART_ReceiveChar	16	static
+../Src/USART_Prog.c:120:6:USART_SendString	16	static
+../Src/USART_Prog.c:128:6:USART1_IRQHandler	16	static
+../Src/USART_Prog.c:149:9:USART_GetFlagStatus	16	static

@@ -1,0 +1,7 @@
+../Src/NVIC_prog.c:18:9:ENABLE_interrupt	2
+../Src/NVIC_prog.c:35:9:DISABLED_interrupt	2
+../Src/NVIC_prog.c:52:9:SET_PendingFlag	2
+../Src/NVIC_prog.c:69:9:Clear_PendingFlag	2
+../Src/NVIC_prog.c:87:9:Active_PendingFlag	2
+../Src/NVIC_prog.c:104:6:SetInterruptPriority	1
+../Src/NVIC_prog.c:114:7:NVIC_ConfigurePriorityGrouping	2

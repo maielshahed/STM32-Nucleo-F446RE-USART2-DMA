@@ -1,0 +1,29 @@
+/*
+ * USART_Prog.c
+ *
+ *  Created on: May 26, 2025
+ *      Author: Mai El Shahed
+ */
+
+
+#include "USART_interface.h"
+#include "Stm32F446xx.h"
+
+
+
+void Mood(USART_RegDef_t *USARTx, USART_Mode mode) {
+    // أولاً: تأكد من إيقاف الـ Transmitter و Receiver
+    USARTx->CR1 &= ~((1 << TE) | (1 << RE));
+
+    switch (mode) {
+        case RX_ONLY:
+            USARTx->CR1 |= (1 << RE);  // Enable Receiver
+            break;
+        case TX_ONLY:
+            USARTx->CR1 |= (1 << TE);  // Enable Transmitter
+            break;
+        case RX_TX:
+            USARTx->CR1 |= (1 << TE) | (1 << RE);  // Enable both
+            break;
+    }
+}
